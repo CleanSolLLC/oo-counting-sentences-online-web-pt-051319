@@ -17,5 +17,6 @@ class String
   def count_sentences
     sentences = self.split(/[\W+]/)
     sentences.count
+    binding.pry
   end
 end
