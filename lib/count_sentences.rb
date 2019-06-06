@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    sentences = self.split(/(\.|\?|\!)/).each {|s| puts "#{s}"}
+    sentences = self.split(/[\W+]/)
     sentences.count
   end
 end
